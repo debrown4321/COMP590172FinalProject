@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: purplewindow
-  m_Shader: {fileID: -6465566751694194690, guid: 3c88dc74ea0b6df4082ca73617719952,
+  m_Name: skymat
+  m_Shader: {fileID: -6465566751694194690, guid: 5f27dcbf4aeba7748832d4cdb2988c4a,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -115,13 +115,12 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.07076622, g: 0.005108467, b: 1.0829923, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 0}
+    - _Color_1: {r: 0.2701066, g: 0, b: 0.67058825, a: 0.02352941}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _glowcolor: {r: 0.8113207, g: 0, b: 0.767703, a: 1}
-    - _maincolor: {r: 0.22197327, g: 0.05850234, b: 0.6415094, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &415165559697341125
+--- !u!114 &7170008097395342314
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

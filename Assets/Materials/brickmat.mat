@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: purplewindow
-  m_Shader: {fileID: -6465566751694194690, guid: 3c88dc74ea0b6df4082ca73617719952,
+  m_Name: brickmat
+  m_Shader: {fileID: -6465566751694194690, guid: ccd75b13d976a3040a42ed42559f15e2,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -113,15 +113,21 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - _noise_edge: 0.04
+    - _noise_scale: 8
+    - _random_color_range: 0.5
+    - _random_height_range: 0.1
+    - _randomoffsetrange: 0.5
+    - _tiling: 100
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.07076622, g: 0.005108467, b: 1.0829923, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _glowcolor: {r: 0.8113207, g: 0, b: 0.767703, a: 1}
-    - _maincolor: {r: 0.22197327, g: 0.05850234, b: 0.6415094, a: 1}
+    - _color: {r: 0.05003787, g: 0.010902455, b: 0.46226418, a: 1}
+    - _fill_color: {r: 0.1981132, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &415165559697341125
+--- !u!114 &1596710828264145302
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
