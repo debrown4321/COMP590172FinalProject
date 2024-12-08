@@ -655,7 +655,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 2
+  m_CollisionDetection: 0
 --- !u!1 &46225960
 GameObject:
   m_ObjectHideFlags: 0
@@ -4434,6 +4434,8 @@ MonoBehaviour:
   bulletGO: {fileID: 1815335754}
   bulletSpeed: 25
   player: {fileID: 41440648}
+  damper: 629
+  spring: 1503
   barrel: {fileID: 1058293555}
 --- !u!1 &358051778
 GameObject:
@@ -12195,6 +12197,8 @@ MonoBehaviour:
   bulletGO: {fileID: 1458692703}
   bulletSpeed: 25
   player: {fileID: 41440648}
+  damper: 500
+  spring: 1000
   barrel: {fileID: 1782263059}
 --- !u!1 &1083528190
 GameObject:

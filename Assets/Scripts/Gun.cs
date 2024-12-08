@@ -16,6 +16,10 @@ public class Gun : MonoBehaviour
     [Header("Player Info")]
     public GameObject player;
     SpringJoint springJoint;
+    [Range(500f, 2000f)]
+    public float damper = 500f;
+    [Range(1000f, 3000f)]
+    public float spring = 1000f;
 
     [Header("Gun Info")]
     public Transform barrel;
@@ -55,8 +59,8 @@ public class Gun : MonoBehaviour
         springJoint.maxDistance = disJointToPlayer * 0.9f;
         springJoint.minDistance = disJointToPlayer * 0.1f;
 
-        springJoint.damper = 100f;
-        springJoint.spring = 300f;
+        springJoint.damper = damper;
+        springJoint.spring = spring;
     }
 
     private void Update()
