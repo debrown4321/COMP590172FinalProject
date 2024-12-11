@@ -275,7 +275,7 @@ Transform:
   m_GameObject: {fileID: 7403692}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -30}
+  m_LocalPosition: {x: 0, y: 0, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13691,7 +13691,7 @@ Transform:
   m_GameObject: {fileID: 1175979031}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 30}
+  m_LocalPosition: {x: 0, y: 0, z: 25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15031,7 +15031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletGO: {fileID: 1195812221}
-  bulletSpeed: 50
+  bulletSpeed: 100
   reloadSpeed: 5
   player: {fileID: 87539065}
   damper: 1
@@ -23186,7 +23186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletGO: {fileID: 15745176}
-  bulletSpeed: 50
+  bulletSpeed: 100
   reloadSpeed: 5
   player: {fileID: 87539065}
   damper: 1
