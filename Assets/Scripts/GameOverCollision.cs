@@ -9,7 +9,7 @@ public class GameOverOnCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.name == "player")
+        if (collision.transform.name == playerTag)
         {
             SoundManager.PlaySound(SoundType.CRASH, 0.8f);
             SoundManager.PlaySound(SoundType.FAIL, 0.8f);
