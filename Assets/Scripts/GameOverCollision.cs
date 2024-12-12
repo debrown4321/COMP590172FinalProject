@@ -11,8 +11,6 @@ public class GameOverOnCollision : MonoBehaviour
     {
         if (collision.transform.name == "player")
         {
-            SoundManager.PlaySound(SoundType.CRASH, 0.8f);
-            SoundManager.PlaySound(SoundType.FAIL, 0.8f);
             EndGame();
         }
     }

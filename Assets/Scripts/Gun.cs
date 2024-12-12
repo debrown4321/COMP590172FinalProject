@@ -44,12 +44,6 @@ public class Gun : MonoBehaviour
 
     public void Fire()
     {
-        SoundManager.PlaySound(SoundType.WOOSH, 0.8f);
-
-        // Haptics
-        OVRInput.SetControllerVibration(0.5f, 0.2f, OVRInput.Controller.RTouch);
-        OVRInput.SetControllerVibration(0.5f, 0.2f, OVRInput.Controller.LTouch);
-
         lr.positionCount = 2;
         bulletGO.SetActive(true);
         Shooting = true;
@@ -60,7 +54,6 @@ public class Gun : MonoBehaviour
 
     public void Reload()
     {
-        SoundManager.PlaySound(SoundType.RELOAD, 0.6f);
         Shooting = false;
         Reloading = true;
         Destroy(springJoint);
