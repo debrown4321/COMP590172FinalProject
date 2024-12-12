@@ -9,7 +9,7 @@ public class GameOverOnCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.name == "player")
+        if (collision.transform.name == playerTag)
         {
             EndGame();
         }
