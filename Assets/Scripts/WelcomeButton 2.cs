@@ -9,7 +9,7 @@ public class WelcomeButton : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("collider hit button");
+        SoundManager.PlaySound(SoundType.SUCCESS, 0.8f);
         SceneManager.LoadScene(gameSceneName);
     }
     // Start is called before the first frame update

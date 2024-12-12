@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit collider (outside if)");
+        
         if (other.CompareTag("Player"))
         {
             SoundManager.PlaySound(SoundType.SUCCESS, 0.8f);
+            SceneManager.LoadScene("ExitScene");
             Debug.Log("hit collider");
-            //have something that loads new scene showing high score
+            
         }
     }
 }
