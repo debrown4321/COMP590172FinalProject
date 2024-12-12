@@ -94,15 +94,16 @@ public class Gun : MonoBehaviour
     private void Update()
     {
 
-        if (!Shooting)
+        if (!Shooting && !Reloading)
         {
             bulletGO.SetActive(false);
             bulletTransform.position = barrel.position;
             bulletTransform.forward = barrel.forward;
-            if (springJoint != null) {
-                Destroy(springJoint);
-            }
         } 
+        else if (Reloading)
+        {
+            bulletTransform.position = Vector3.MoveTowards(bulletTransform.position, barrel.position, reloadSpeed);
+        }
     }
 
     private void LateUpdate()
