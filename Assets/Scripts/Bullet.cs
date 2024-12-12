@@ -15,7 +15,6 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall")
         {
-            SoundManager.PlaySound(SoundType.THUD, 0.9f); 
             hitPoint = collision.contacts[0].point;
             collisionObject = collision.gameObject;
             fixedJoint = gameObject.AddComponent<FixedJoint>();
