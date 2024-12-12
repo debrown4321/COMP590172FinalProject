@@ -13,7 +13,9 @@ public enum SoundType
     SUCCESS,
     FAIL,
     CRASH,
-    CLOCK
+    CLOCK,
+    INTRO,
+    RELOAD
 
 }
 

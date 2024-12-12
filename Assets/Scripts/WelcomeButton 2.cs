@@ -9,6 +9,7 @@ public class WelcomeButton : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("collider hit button");
         SceneManager.LoadScene(gameSceneName);
     }
     // Start is called before the first frame update

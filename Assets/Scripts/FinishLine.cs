@@ -11,6 +11,7 @@ public class FinishLine : MonoBehaviour
         {
             SoundManager.PlaySound(SoundType.SUCCESS, 0.8f);
             Debug.Log("hit collider");
+            //have something that loads new scene showing high score
         }
     }
 }
