@@ -9,14 +9,19 @@ public class FinishLine : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("On trigger entered called outside of IF");
         
-        if (other.name == "PlayerCollider")
+        if (other.CompareTag("Player"))
         {
             timer.StopTimer();
             SoundManager.PlaySound(SoundType.SUCCESS, 0.8f);
             SceneManager.LoadScene("ExitScene");
             Debug.Log("hit collider");
        
+        }
+        else
+        {
+            Debug.Log("other object entered: " + other.name);
         }
     }
 }
