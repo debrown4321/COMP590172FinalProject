@@ -8,11 +8,7 @@ public class BounceTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        playerBounce.BounceOff();
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
         playerBounce.BounceOn();
     }
+
 }

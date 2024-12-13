@@ -27,12 +27,11 @@ public class BounceControl : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.tag == "Wall")
         {
-            leftGun.Shooting = false;
-            leftGun.Reloading = true;
-            rightGun.Shooting = false;
-            rightGun.Reloading = true;
+            Debug.Log(collision.gameObject.tag);
+            leftGun.Reload();
+            rightGun.Reload();
         }
     }
 }
