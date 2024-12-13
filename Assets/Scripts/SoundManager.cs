@@ -35,6 +35,10 @@ public class SoundManager : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         audioSourcesLooping = GetComponents<AudioSource>();
+
+        PlaySound(SoundType.WIND, 0.4f);
+        PlayLoopingSound(SoundType.CITY, 0.8f, 0);
+        
     }
 
     public static void PlaySound(SoundType sound, float volume = 1)
