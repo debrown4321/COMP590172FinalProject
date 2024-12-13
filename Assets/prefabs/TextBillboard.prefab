@@ -244,6 +244,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TextBillboard
       objectReference: {fileID: 0}
+    - target: {fileID: 6736504686684964149, guid: e0d3de5eaa6a84c39a14fc11b154bc46,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4043794751432895215, guid: e0d3de5eaa6a84c39a14fc11b154bc46, type: 3}
