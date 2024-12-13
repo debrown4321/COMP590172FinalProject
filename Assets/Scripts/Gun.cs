@@ -44,6 +44,7 @@ public class Gun : MonoBehaviour
 
     public void Fire()
     {
+        SoundManager.PlaySound(SoundType.WOOSH, 0.7f);
         lr.positionCount = 2;
         bulletGO.SetActive(true);
         Shooting = true;
@@ -54,6 +55,7 @@ public class Gun : MonoBehaviour
 
     public void Reload()
     {
+        SoundManager.PlaySound(SoundType.RELOAD, 0.7f);
         Shooting = false;
         Reloading = true;
         Destroy(springJoint);
