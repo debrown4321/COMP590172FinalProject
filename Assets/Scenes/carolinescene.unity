@@ -16259,6 +16259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1ee577c11564101bcff43756a80356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 0}
 --- !u!65 &1205149381
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16278,7 +16279,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.000001, y: 0.0000003717884, z: 9.999999}
+  m_Size: {x: 60, y: 60, z: 60}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1205149382
 Rigidbody:
