@@ -45,8 +45,18 @@ public class Gun : MonoBehaviour
     public void Fire()
     {
         SoundManager.PlaySound(SoundType.WOOSH, 0.7f);
-        OVRInput.SetControllerVibration(0.5f, 0.5f, OVRInput.Controller.RTouch);
-        OVRInput.SetControllerVibration(0.5f, 0.5f, OVRInput.Controller.LTouch);
+
+        if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
+        {
+            OVRInput.SetControllerVibration(0.1f, 0.5f, OVRInput.Controller.RTouch);
+        }
+        if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
+        {
+            OVRInput.SetControllerVibration(0.1f, 0.5f, OVRInput.Controller.LTouch);
+        }
+
+        
+
         lr.positionCount = 2;
         bulletGO.SetActive(true);
         Shooting = true;
